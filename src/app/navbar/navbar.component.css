@@ -1,0 +1,14 @@
+.my-custom-drop {
+  background-color: darkgray;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.my-custom-drop-items{
+  color: black;
+}
