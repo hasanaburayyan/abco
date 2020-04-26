@@ -6,10 +6,10 @@ import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
-  templateUrl: './contact-us.component.html',
-  styleUrls: ['./contact-us.component.css']
+  templateUrl: './place-order.html',
+  styleUrls: ['./place-order.css']
 })
-export class ContactUsComponent implements OnInit {
+export class PlaceOrder implements OnInit {
 
   public registrationForm: FormGroup;
 
@@ -27,7 +27,7 @@ export class ContactUsComponent implements OnInit {
       email: [null, [Validators.email, Validators.required]],
       accountNumber: [null, [Validators.required]],
       contactPerson: [null, [Validators.required]],
-      newOrder: [false],
+      newOrder: [null],
       productName: [null, [Validators.required]],
       quantity: [null, Validators.required],
       startingNumber: [null],

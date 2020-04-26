@@ -1,11 +1,11 @@
 <!--=== Contact section Starts ===-->
-<section id="section-contact" class="contact-wrap">
+<section id="section-order" class="contact-wrap">
   <div class="section-overlay"></div>
   <div class="container contact center animated" data-animation="flipInY" data-animation-delay="1000">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div class="col-md-10 col-md-offset-1 center section-title">
-          <h3>Leave a message</h3>
+          <h3>Place An Order</h3>
         </div>
 
         <div class="confirmation">
@@ -23,7 +23,12 @@
 
             <input id="contactPerson" formControlName="contactPerson" class="input-field form-item field-subject" type="text" required="required" name="contactPerson" placeholder="Contact Person" />
 
-            <input id="newOrder" formControlName="newOrder" type="text" class="input-field form-item field-subject" required="required" name="newOrder"/>
+            <input id="newOrder" list="orderTypes" formControlName="newOrder" class="input-field form-item field-subject" required="required" name="newOrder" placeholder="New Order?"/>
+
+            <datalist id="orderTypes">
+              <option value="Yes">
+              <option value="No">
+            </datalist>
 
             <input id="productName" formControlName="productName" class="input-field form-item field-subject" type="text" required="required" name="productName" placeholder="Product Name" />
 

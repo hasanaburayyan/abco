@@ -14,7 +14,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { DownloadCatalogComponent } from './download-catalog/download-catalog.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { PlaceOrder } from './place-order/place-order';
 import { FooterComponent } from './footer/footer.component';
 import { SettingPopupComponent } from './setting-popup/setting-popup.component';
 import { FbPopupComponent } from './fb-popup/fb-popup.component';
@@ -42,7 +42,7 @@ const appRoutes: Routes = [
     PricingComponent,
     SubscribeComponent,
     DownloadCatalogComponent,
-    ContactUsComponent,
+    PlaceOrder,
     FooterComponent,
     SettingPopupComponent,
     FbPopupComponent,
