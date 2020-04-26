@@ -17,22 +17,23 @@
           </div>
 
           <!-- Main Navigation menu Starts -->
-          <div class="collapse navbar-collapse navbar-responsive-collapse" (click)="hideMenu()">
+          <div class="collapse navbar-collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="current" (mouseover)="hideMenu()"><a href="#section-home">Home</a></li>
-              <li (mouseover)="hideMenu()"><a href="#section-aboutus">About Us</a></li>
-              <li (mouseover)="hideMenu()"><a href="#section-products">Products</a></li>
-              <li (mouseover)="hideMenu()"><a href="#section-rewards">Rewards Program</a></li>
+              <li class="current"><a href="#section-home">Home</a></li>
+              <li><a href="#section-aboutus">About Us</a></li>
+              <li><a href="#section-products">Products</a></li>
+<!--              <li (mouseover)="hideMenu()"><a href="#section-rewards">Rewards Program</a></li>-->
 
 
-              <li>
-                  <a href="#section-why-abco"  (mouseover)="showMenu()">Why ABCO</a>
-                  <ul *ngIf="dropdown" (mouseover)="showMenu()" style="border-radius: 25px" >
-                    <li class="my-custom-drop"><a href="#section-why-abco" class="my-custom-drop-items">The Personal Touch</a></li>
-                    <li class="my-custom-drop"><a href="#section-testimonials" class="my-custom-drop-items"> Testimonials</a></li>
-                  </ul>
+              <li><a href="#section-why-abco">Why ABCO</a>
+<!--                  <a href="#section-why-abco"  (mouseover)="showMenu()">Why ABCO</a>-->
+<!--                  <ul *ngIf="dropdown" (mouseover)="showMenu()" style="border-radius: 25px" >-->
+<!--                    <li class="my-custom-drop"><a href="#section-why-abco" class="my-custom-drop-items">The Personal Touch</a></li>-->
+<!--                    <li class="my-custom-drop"><a href="#section-testimonials" class="my-custom-drop-items"> Testimonials</a></li>-->
+<!--                  </ul>-->
               </li>
-              <li (mouseover)="hideMenu()"><a href="#section-contact">Contact Us</a></li>
+              <li><a href="#section-directions">Directions</a> </li>
+              <li><a href="#section-contact">Contact Us</a></li>
             </ul>
           </div>
           <!-- Main Navigation menu ends-->

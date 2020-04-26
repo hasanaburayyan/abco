@@ -11,7 +11,7 @@ import {Router} from '@angular/router';
 })
 export class ContactUsComponent implements OnInit {
 
-  private registrationForm: FormGroup;
+  public registrationForm: FormGroup;
 
   constructor(private fb: FormBuilder, private router: Router, private formService: FormService) {
     this.createForm();
