@@ -48,7 +48,7 @@ async function sendMail(req) {
     },
     auth: {
       user: 'abco.printing.leads@outlook.com',
-      pass: process.env.EMAIL_PASSWORD
+      pass: 'Lucylaith2!'
     }
   });
 
