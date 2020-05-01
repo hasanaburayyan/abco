@@ -2,3 +2,13 @@
   background-color:#333;
   color:#e5e5e5;
 }
+
+p {
+  color: black;
+}
+
+h4 {
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
