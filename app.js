@@ -37,7 +37,7 @@ app.post('/api/contactForm', async (req, res) => {
 });
 
 async function sendMail(req) {
-  const {companyName, email, accountNumber, contactPerson, newOrder, productName, quantity, startingNumber, shippingAddress, comments} = req.body;
+  const {companyName, email, accountNumber, contactPerson, newOrder, productName, quantity, startingNumber, shippingAddress, billingAddress, comments} = req.body;
 
   var transporter = nodemailer.createTransport({
     host: "smtp-mail.outlook.com", // hostname
@@ -48,7 +48,7 @@ async function sendMail(req) {
     },
     auth: {
       user: 'abco.printing.leads@outlook.com',
-      pass: process.env.EMAIL_PASSWORD
+      pass: 'Lucylaith2!'
     }
   });
 
@@ -59,7 +59,7 @@ async function sendMail(req) {
     from: '"Website Order" <abco.printing.leads@outlook.com>', // sender address
     to: "hasanaburayyan21@gmail.com", // list of receivers
     subject: "ABCO NEW CUSTOMER ORDER ACTION REQUIRED!", // Subject line
-    text: `NEW LEAD: ${companyName}, ${email}, ${contactPerson}, ${newOrder}, ${productName}, ${quantity}, ${shippingAddress}, ${comments}`, // plain text body
+    text: `NEW LEAD: ${companyName}, ${email}, ${contactPerson}, ${newOrder}, ${productName}, ${quantity}, ${shippingAddress}, ${billingAddress} , ${comments}`, // plain text body
     html: `<h1>${companyName} has placed a new order!</h1>` +
       `<u><b><h3>Order info</h3></b></u>` +
       `<p>Company Name: ${companyName}</p>
@@ -71,6 +71,7 @@ async function sendMail(req) {
                  <p>Quantity: ${quantity}</p>
                  <p>Starting Number: ${startingNumber}</p>
                  <p>Shipping Address: ${shippingAddress}</p>
+                 <p>Billing Address: ${billingAddress}</p>
                  <p>Additional Comments: ${comments}</p>`
   }
 

@@ -32,6 +32,7 @@ export class PlaceOrder implements OnInit {
       quantity: [null, Validators.required],
       startingNumber: [null],
       shippingAddress: [null, Validators.required],
+      billingAddress: [null, Validators.required],
       comments: [null]
     });
   }
@@ -51,10 +52,11 @@ export class PlaceOrder implements OnInit {
       const quantity = this.registrationForm.get('quantity').value;
       const startingNumber = this.registrationForm.get('startingNumber').value;
       const shippingAddress = this.registrationForm.get('shippingAddress').value;
+      const billingAddress = this.registrationForm.get('billingAddress').value;
       const comments = this.registrationForm.get('comments').value;
 
       const contactForm = new ContactForm(companyName, email, accountNumber, contactPerson, newOrder,
-        productName, quantity, startingNumber, shippingAddress, comments);
+        productName, quantity, startingNumber, shippingAddress, billingAddress, comments);
 
       this.formService.sendOrder(contactForm).subscribe(data => {
         console.log(data);

@@ -8,11 +8,11 @@ export class ContactForm {
   private quantity: number;
   private startingNumber: string;
   private shippingAddress: string;
+  private billingAddress: string;
   private comments: string;
 
-
   constructor(companyName: string, email: string, accountNumber: string, contactPerson: string, newOrder: boolean, productName: string,
-              quantity: number, startingNumber: string, shippingAddress: string, comments: string) {
+              quantity: number, startingNumber: string, shippingAddress: string, billingAddress: string ,comments: string) {
     this.companyName = companyName;
     this.email = email;
     this.accountNumber = accountNumber;
@@ -22,6 +22,7 @@ export class ContactForm {
     this.quantity = quantity;
     this.startingNumber = startingNumber;
     this.shippingAddress = shippingAddress;
+    this.billingAddress = billingAddress;
     this.comments = comments;
   }
 
