@@ -57,7 +57,7 @@ async function sendMail(req) {
 
   var mailOptions = {
     from: '"Website Order" <abco.printing.leads@outlook.com>', // sender address
-    to: "hasanaburayyan21@gmail.com", // list of receivers
+    to: "hasanaburayyan21@gmail.com"; "abcoprinting@gmail.com", // list of receivers
     subject: "ABCO NEW CUSTOMER ORDER ACTION REQUIRED!", // Subject line
     text: `NEW LEAD: ${companyName}, ${email}, ${contactPerson}, ${newOrder}, ${productName}, ${quantity}, ${shippingAddress}, ${billingAddress} , ${comments}`, // plain text body
     html: `<h1>${companyName} has placed a new order!</h1>` +
