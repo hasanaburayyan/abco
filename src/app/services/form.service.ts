@@ -18,7 +18,7 @@ export class FormService {
   sendOrder(form: ContactForm) {
     console.log('Sending');
     console.log(form);
-    return this.http.post<MyData>('https://abco-server.glitch.me/api/contactForm', form);
+    return this.http.post<MyData>('https://abco-server2.glitch.me/api/contactForm', form);
   }
 
 }
